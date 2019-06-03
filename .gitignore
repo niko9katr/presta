@@ -1,4 +1,5 @@
 #perso
+*.htaccess
 .editorconfig
 .eslintignore
 .eslintrc.js
@@ -38,7 +39,23 @@ pdf/
 src/
 tests-legacy/
 tests/
-themes/
+_core/         
+debug.tpl       
+node_modules/  
+assets/    
+
+_libraries/  
+core.js      
+index.php       
+package.json       
+README.MD
+classic/     
+core.js.map  
+javascript.tpl  
+package-lock.json  
+webpack.config.js
+themes/_libraries/*
+themes/classic/*
 
 tools/
 travis-scripts/
