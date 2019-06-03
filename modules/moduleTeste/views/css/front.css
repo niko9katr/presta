@@ -117,7 +117,7 @@ h3{
     bottom: 0;
     right: 0;
     margin: auto;
-    background-color: #1476d1;
+    
     background-size:50px 50px;
     opacity:0;
     filter:alpha(opacity=0);/*For IE6 - IE8*/
@@ -140,18 +140,26 @@ h3{
     font-size:18px;
     font-weight:bold;
     font-weight:normal!important;
-    top:40%;
+    top:50%;
     color:white;
     opacity:0;
     filter:alpha(opacity=0);/*For older IE*/
     transform:translateY(-20px);
     transition:all .3s;
 }
+#calque1{
+    background-color: #2fe05e;
+}
+#calque2{
+    background-color: #1476d1;
+}
+#calque3{
+    background-color: #e02f2f;
+}
 #rig li:hover .rig-text {
     transform:translateY(0px);
     opacity:0.9;
 }
-
 @media (max-width: 9000px) {
     #rig li {
         width:33.33%;
@@ -173,7 +181,7 @@ h3{
     width: 100vw;
     position: relative;
     margin-left: -50vw;
-    height: 400px;
+    height: 325px;
     margin-top: 100px;
     left: 50%;
     padding: 0;

@@ -52,21 +52,22 @@
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="http://localhost/nouvelleliterie/PrestaShop/modules/moduleTeste/views/img/meeting1.jpg">
-            <span class="rig-overlay"></span>
+            <span id="calque1" class="rig-overlay"></span>
             <span class="rig-text">Venez nous rencontrer</span>
+            
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="http://localhost/nouvelleliterie/PrestaShop/modules/moduleTeste/views/img/sheep2.jpg">
-            <span class="rig-overlay"></span>
+            <span id="calque2" class="rig-overlay"></span>
             <span class="rig-text">Notre histoire</span>
         </a>
     </li>
     <li>
         <a class="rig-cell" href="#">
             <img class="rig-img" src="http://localhost/nouvelleliterie/PrestaShop/modules/moduleTeste/views/img/tendances2.jpg">
-            <span class="rig-overlay"></span>
+            <span id="calque3" class="rig-overlay"></span>
             <span class="rig-text">Tendances</span>
         </a>
     </li>
