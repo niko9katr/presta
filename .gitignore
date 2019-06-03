@@ -1,4 +1,5 @@
 #perso
+*.png
 .editorconfig
 .eslintignore
 .eslintrc.js
