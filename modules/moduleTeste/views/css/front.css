@@ -21,35 +21,151 @@
 *  @copyright 2007-2019 PrestaShop SA
 *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
-*
 * Don't forget to prefix your containers with your own identifier
 * to avoid any conflicts with others containers.
 */
 /*images */
-.miniature{ 
-    width: 150px; 
-    height: 150px; 
-    object-fit: cover; /*redimensionne les images sans les pixeliser */
+/*.miniature{ 
+    margin-bottom: 35px;
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .5s ease-in-out;
+}
+.miniature:hover{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .img {
-	border-style: none
+    border-style: none;
+    border-radius: 30px;
 }
 
 #custom-text{
     padding-bottom: 3.125rem;
     overflow: hidden;
-    border-radius: 2px;
     margin-bottom: 3.5rem;
     padding: 3.125rem;
     text-align: center;
+    border: 10px solid #1476d1;
+    background-color: #1476d1;
 }
 .aLaUne{
-	background-color: #515151;
-	color: #fff;
-	border-radius: 30px;
+    background-color: #fff;
+    border-radius: 10px;
     padding: 20px;
 }
 #custom-text p {
-    color: #fff
+    color: #515151;
+    
+}
+#titreALAUne{
+    color :#fff;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+h3{
+    color:#2d2d2d;
+}*/
+#rig {
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#000;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
 
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: #1476d1;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:uppercase;
+    font-size:18px;
+    font-weight:bold;
+    font-weight:normal!important;
+    top:40%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:100%;
+    }
 }

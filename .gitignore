@@ -1,5 +1,6 @@
 #perso
 *.htaccess
+*.png
 .editorconfig
 .eslintignore
 .eslintrc.js
