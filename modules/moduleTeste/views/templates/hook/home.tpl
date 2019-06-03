@@ -47,7 +47,7 @@
    </div>
 </div>*}
 
-<div id="custom-text">
+<div id="custom-text" class="row-full">
    <ul id="rig">
     <li>
         <a class="rig-cell" href="#">
