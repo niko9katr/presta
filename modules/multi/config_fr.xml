@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>multi</name>
+    <displayName><![CDATA[Module nouvelle literie]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[ce module a et&eacute;e concue pour l entreprise Nouvelle literie]]></description>
+    <author><![CDATA[niko]]></author>
+    <tab><![CDATA[administration]]></tab>
+	<confirmUninstall><![CDATA[êtes vous sur de vouloir désinstaller le module]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+	<limited_countries></limited_countries>
+</module>

@@ -1,9 +1,23 @@
 #perso
-override/classes/
-       
+override/classes/ 
 modules/hooksmanager/
 *.zip
 *.swp
+_core/*       
+assets/* 
+debug.tpl  
+javascript.tpl     
+perso/*
+_libraries/*  
+core.js      
+fantom/*    
+package.json       
+webpack.config.js
+classic/     
+core.js.map  
+index.php  
+package-lock.json
+node_modules/
 *.htaccess
 .editorconfig
 .eslintignore
@@ -257,9 +271,6 @@ app/config/config.php
 
 # Themes, modules and overrides
 
-
-
-themes/*/
 !themes/classic
 !themes/_core
 !themes/_libraries
