@@ -1,6 +1,10 @@
 #perso
+override/classes/
+       
+modules/hooksmanager/
+*.zip
+*.swp
 *.htaccess
-*.png
 .editorconfig
 .eslintignore
 .eslintrc.js
@@ -254,7 +258,7 @@ app/config/config.php
 # Themes, modules and overrides
 
 
-override/*
+
 themes/*/
 !themes/classic
 !themes/_core
