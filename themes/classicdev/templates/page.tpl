@@ -26,8 +26,7 @@
 
 {block name='content'}
   <div id="preloader">
-    <div id="status">&nbsp;</div>
-    <p>Un paragraphe</p>
+    <div id="status"></div>
   </div>
   <section id="main">
 
