@@ -54,16 +54,32 @@ for (var i in EventEmitter.prototype) {
 }
 
 $(document).ready(() => {
+<<<<<<< HEAD
+=======
+  $(window).on('load', function () { // makes sure the whole site is loaded 
+    $('#status').fadeOut(); // will first fade out the loading animation 
+    $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+    $('body').delay(350).css({ 'overflow': 'visible' });
+  })
+>>>>>>> 189ed7bdba582c93026a469409384e6ae19b4ad1
   let dropDownEl = $('.js-dropdown');
   const form = new Form();
   let topMenuEl = $('.js-top-menu ul[data-depth="0"]');
   let dropDown = new DropDown(dropDownEl);
   let topMenu = new TopMenu(topMenuEl);
   let productMinitature = new ProductMinitature();
+<<<<<<< HEAD
   let productSelect  = new ProductSelect();
+=======
+  let productSelect = new ProductSelect();
+>>>>>>> 189ed7bdba582c93026a469409384e6ae19b4ad1
   dropDown.init();
   form.init();
   topMenu.init();
   productMinitature.init();
   productSelect.init();
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 189ed7bdba582c93026a469409384e6ae19b4ad1
