@@ -8,37 +8,31 @@
 		Aliquip ea adipisicing veniam est.
 	</p>
 
-	
-
 	{*separation horizontale*}
 
 	{block name=contenuePreincipale}
 
 		{block name=matelas}
-			<h3>les matelas</h3>{*smarty var*}
-			<img src="" alt="pure,laine,bio,coussin">{*smarty var*}
+			 <h3>les matelas</h3>{*{$MULTI_STR} *}
+			<img src="" alt="pure,laine,bio,coussin">
 			<p>Proident proident mollit officia mollit culpa qui.
-			Proident proident mollit officia mollit culpa qui.</p>{*smarty var*}
+			Proident proident mollit officia mollit culpa qui.</p>
 		{/block}
 		
-		{hook::exec('hookDisplayCustom')}
-
-		{block name='hookDisplayCustom'}
+		{block name='hookdisplayCustom'}
 			<div class="">
-				ici c est le hook
-				{hook h='hookDisplayCustom'}
+				<p>ceci est un hook tu peux le placer nimporte ou</p>
+				{hook h='displayCustom'}
 			</div>
-		{/block}
+		{/block} 
 
 		{block name=matelas}
-			<h3>les somier</h3>{*smarty var*}
-			<img src="" alt="pure,laine,bio,coussin,">{*smarty var*}
+			<h3>les somier</h3>
+			<img src="" alt="pure,laine,bio,coussin,">
 			<p>Proident proident mollit officia mollit culpa qui.
-			Proident proident mollit officia mollit culpa qui.</p>{*smarty var*}
+			Proident proident mollit officia mollit culpa qui.</p>
 		{/block}
 	{/block}
-
-
 {/block}
 
 

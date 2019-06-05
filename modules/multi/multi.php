@@ -68,6 +68,8 @@ class Multi extends Module
         return parent::install() &&
             $this->registerHook('header') &&
             $this->registerHook('backOfficeHeader') &&
+            $this->registerHook('displayCustom') &&
+
             $this->registerHook('displayHome');
     }
 
@@ -97,8 +99,19 @@ class Multi extends Module
         $output = $this->context->smarty->fetch($this->local_path.'views/templates/admin/configure.tpl');
 
         return $output.$this->renderForm();
-    }
 
+        // if(Tools::isSubmit('savemultisting')){
+        //     $name = Tools::getValue('print');
+        //     Configuration::updateValue('MULTI_STR', $name);
+        // }
+        // $this->context->smarty->assign(array(
+        //     'MULTI_STR' => Configuration::get('MULTI_STR')
+        // ));
+        // return $this-display(__FILE__, 'views/templates/admin/configure.tpl');
+
+    }
+    
+    
     /**
      * Create the form that will be displayed in the configuration of your module.
      */
@@ -228,5 +241,10 @@ class Multi extends Module
         /* Place your code here. */
         return $this->display(__FILE__, 'views/templates/hook/main.tpl') ;
 
+    }
+    public function hookDisplayCustom()
+    {
+        /* envoi le code dans le hook display custom(apropos.tpl) */
+        return "lot of texte------------------------------------";
     }
 }

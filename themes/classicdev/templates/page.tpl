@@ -25,7 +25,9 @@
 {extends file=$layout}
 
 {block name='content'}
-
+  <div id="preloader">
+    <div id="status">&nbsp;</div>
+  </div>
   <section id="main">
 
     {block name='page_header_container'}

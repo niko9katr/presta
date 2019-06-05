@@ -49,7 +49,6 @@ img/
 index.php
 init.php
 install-dev/
-js/
 localization/
 mails/
 package-lock.json
