@@ -409,4 +409,72 @@
   border-radius: 25px;
   padding: 10px;
   font-size: 1.1em;
+<<<<<<< HEAD
 }
+=======
+}
+
+.newslettersCentrer{
+  margin: 0 auto;
+  width: 50%;
+}
+img{
+  transition: transform .2s; /* Animation */
+}
+img:hover{
+    transform: scale(1.05);
+}
+.carousel{
+  opacity: 1;
+  transition: 0.3s;
+}
+.carousel:hover {
+  opacity: 0.9;
+}
+
+/*PRELOADER*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 47%;
+  /* centers the loading animation horizontally one the screen */
+  top: 3%;
+  /* centers the loading animation vertically one the screen */
+  /* path to your loading animation */
+  /* is width and height divided by two */
+  height: 60px;
+  width: 60px;
+  margin: 40vh auto;
+  border: 8px solid rgba(43,96,181,0.45);
+  border-top: 8px solid $brand-primary;
+  border-radius: 50%;
+  animation: rotate 1s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.buttonCarousel{
+  margin: 30px auto 0px 30px;
+}
+
+h1, h2{
+  color: #232323;
+}
+>>>>>>> 28cefe4751060271c058c6a7873e716aef3352ca

@@ -26,7 +26,7 @@
 
 {block name='content'}
   <div id="preloader">
-    <div id="status">&nbsp;</div>
+    <div id="status"></div>
   </div>
   <section id="main">
 
