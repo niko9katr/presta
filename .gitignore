@@ -38,7 +38,7 @@ cache/
 classes/
 composer.json
 config/
-controllers/
+
 diff-hooks.php
 docker-compose.yml
 docs/
@@ -59,7 +59,7 @@ tests-legacy/
 tests/
 _core/         
 debug.tpl       
-node_modules/  
+
 assets/    
 
 _libraries/  

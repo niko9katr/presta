@@ -55,7 +55,5 @@
         {/block}
       </footer>
     {/block}
-
   </section>
-
 {/block}

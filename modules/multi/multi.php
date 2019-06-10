@@ -245,6 +245,6 @@ class Multi extends Module
     public function hookDisplayCustom()
     {
         /* envoi le code dans le hook display custom(apropos.tpl) */
-        return "lot of texte------------------------------------";
+        return "";
     }
 }
