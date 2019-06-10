@@ -1,46 +1,33 @@
 {extends file='page.tpl'}
-
 {block name='page_header_container'}{/block}
-{block name="banner"}
-	<a class="banner" href="">
-		<img src="nouvelleLiterie/PrestaShop/themes/classicdev/_dev/img/nouvelleLiterie/coussin/banner2.JPG" alt="baniere" title="matelas de laine">
-	</a>
-    <h1>Nos savoir faire</h1>{*titre de la page *}
-	<p>Aliquip ea adipisicing veniam est.</p>
-{/block}
 
 	{block name='page_content'}
-		{block name="banner"}
-		<a class="banner" href="">
-			<img src="" alt="baniere" title="matelas de laine">
-		</a>
-		<h1>Nos savoir faire</h1>{*titre de la page *}
-		<p>Aliquip ea adipisicing veniam est.</p>
-	{/block}
-
+	<h1>le grand titre</h1>
+	{**}
 	{block name=contenuePreincipale}
 		{block name=matelas}
+		<div align="center" class="blockinfo">
+			<div class="contener_slideshow">
+				<div class="contener_slide">
+					<div class="slid_1"><img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/ing.png"></div>
+					<div class="slid_2"><img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/ing.png"></div>
+					<div class="slid_3"><img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/ing.png"></div>
+				</div>
+			</div>
+		</div>
 			<div class="container ">
 				<h3>les matelas</h3>{**}
-				<img src="" alt="pure,laine,bio,coussin">
 				<p>Proident proident mollit officia mollit culpa qui.
 				Proident proident mollit officia mollit culpa qui.</p>
 			</div>
 		{/block}
-		
+		{*separateur*}
 		{block name='hookdisplayCustom'}
 			<div class="">
-				<p>ceci est un hook tu peux le placer nimporte ou</p>
+				<p>ceci est un hook ,diappo?</p>
 				{hook h='displayCustom'}
 			</div>
-		{/block} 
-
-		{block name=matelas} 
-			<h3>les somier</h3>
-			<img src="" alt="pure,laine,bio,coussin,">
-			<p>Proident proident mollit officia mollit culpa qui.
-			Proident proident mollit officia mollit culpa qui.</p>
-		{/block}
+		{/block} 		
 	{/block}
 {/block}
 

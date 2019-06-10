@@ -25,6 +25,7 @@
 {extends file=$layout}
 
 {block name='content'}
+   <!-- loader -->
   <div id="preloader">
     <div id="status"></div>
   </div>
