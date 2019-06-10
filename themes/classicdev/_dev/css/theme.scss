@@ -408,14 +408,15 @@
   margin: 0 auto;
   width: 50%;
 }
-img{
+#carousel img{
   transition: transform .2s; /* Animation */
 }
-img:hover{
+#carousel img:hover{
     transform: scale(1.05);
 }
 .carousel{
   width: 1516.55px;
+  max-width: 100%;
   opacity: 1;
   transition: 0.3s;
 }

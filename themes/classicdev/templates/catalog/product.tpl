@@ -72,8 +72,8 @@
                 {include file='catalog/_partials/product-cover-thumbnails.tpl'}
               {/block}
               <div class="scroll-box-arrows">
-                <i class="material-icons left">&#xE314;</i>
-                <i class="material-icons right">&#xE315;</i>
+                {*<i class="material-icons left">&#xE314;</i>
+                <i class="material-icons right">&#xE315;</i>*}
               </div>
               {block name='hook_display_reassurance'}
                 {hook h='displayReassurance'}
