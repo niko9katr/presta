@@ -102,7 +102,7 @@ p {
   }
 }
 .card {
-  @include box-shadow;
+  /*@include box-shadow;*/
 }
 label ,.label {
   color: $gray-darker;
