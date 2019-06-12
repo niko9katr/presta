@@ -9,7 +9,7 @@
         </a>
     </li>
     <li>
-        <a class="rig-cell" href="#">
+        <a class="rig-cell" href="http://localhost/Nouvelleliterie/Prestashop/apropos">
             <img class="rig-img" src="http://localhost/nouvelleliterie/PrestaShop/modules/moduleTeste/views/img/sheep2.jpg">
             <span id="calque2" class="rig-overlay"></span>
             <span class="rig-text">Notre histoire<br><img class="miniatureIcon" src="http://localhost/nouvelleliterie/PrestaShop/modules/moduleTeste/views/img/histoire-icone.png"></span>

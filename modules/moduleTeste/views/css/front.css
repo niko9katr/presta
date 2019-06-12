@@ -44,7 +44,7 @@
     bottom: 0;
     right: 0;
     margin: auto;
-    
+    background-color: #1476d1;
     background-size:50px 50px;
     opacity:0;
     filter:alpha(opacity=0);/*For IE6 - IE8*/
@@ -74,15 +74,7 @@
     transform:translateY(-20px);
     transition:all .3s;
 }
-#calque1{
-    background-color: #1ace4a;
-}
-#calque2{
-    background-color: #1476d1;
-}
-#calque3{
-    background-color: #e02f2f;
-}
+
 #rig li:hover .rig-text {
     transform:translateY(0px);
     opacity:0.9;
