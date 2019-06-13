@@ -1,5 +1,4 @@
-<?php
-/**
+{*
 * 2007-2019 PrestaShop
 *
 * NOTICE OF LICENSE
@@ -22,16 +21,28 @@
 *  @copyright 2007-2019 PrestaShop SA
 *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
-*/
-$sql = array();
+*}
 
-$sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'moduleteste` (
-    `id_moduleteste` int(11) NOT NULL AUTO_INCREMENT,
-    PRIMARY KEY  (`id_moduleteste`)
-) ENGINE=' . _MYSQL_ENGINE_ . ' DEFAULT CHARSET=utf8;';
+<div class="panel">
+	<h3><i class="icon icon-credit-card"></i> {l s='A la Une' mod='alaune'}</h3>
+	<p>
+		<strong>{l s='Here is my new generic module!' mod='alaune'}</strong><br />
+		{l s='Thanks to PrestaShop, now I have a great module.' mod='alaune'}<br />
+		{l s='I can configure it using the following configuration form.' mod='alaune'}
+	</p>
+	<br />
+	<p>
+		{l s='This module will boost your sales!' mod='alaune'}
+	</p>
+</div>
 
-foreach ($sql as $query) {
-    if (Db::getInstance()->execute($query) == false) {
-        return false;
-    }
-}
+<div class="panel">
+	<h3><i class="icon icon-tags"></i> {l s='Documentation' mod='alaune'}</h3>
+	<p>
+		&raquo; {l s='You can get a PDF documentation to configure this module' mod='alaune'} :
+		<ul>
+			<li><a href="#" target="_blank">{l s='English' mod='alaune'}</a></li>
+			<li><a href="#" target="_blank">{l s='French' mod='alaune'}</a></li>
+		</ul>
+	</p>
+</div>

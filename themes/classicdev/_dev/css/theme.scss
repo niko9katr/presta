@@ -1,5 +1,5 @@
 @import "~bourbon/app/assets/stylesheets/bourbon";
-@import "partials/_variables";
+@import "partials/_variables.scss";
 @import "~bootstrap/scss/bootstrap";
 @import "~bootstrap-touchspin/dist/j uery.bootstrap-touchspin.min.css";
 @import "partials/_mixins";
@@ -720,6 +720,7 @@ h1, h2{
       left: -1220px;
   }
 }
+//a propos
 #AProposPage{
   padding: 3%;
 }

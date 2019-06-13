@@ -28,17 +28,16 @@ if (!defined('_PS_VERSION_')) {
     exit;
 }
 
-
-class Moduleteste extends Module  
+class Alaune extends Module
 {
     protected $config_form = false;
 
     public function __construct()
     {
-        $this->name = 'moduleteste';
-        $this->tab = 'administration';
-        $this->version = '1.0.1';
-        $this->author = 'nko';
+        $this->name = 'alaune';
+        $this->tab = 'front_office_features';
+        $this->version = '1.0.0';
+        $this->author = 'niko &victor';
         $this->need_instance = 0;
 
         /**
@@ -48,10 +47,12 @@ class Moduleteste extends Module
 
         parent::__construct();
 
-        $this->displayName = $this->l('moduelteste');
-        $this->description = $this->l('aucune description disponible pour ce produit');
+        $this->displayName = $this->l('A la Une');
+        $this->description = $this->l('ce module affiche un bloc full width a la une');
 
-        $this->ps_versions_compliancy = array('min' => '1.7', 'max' => _PS_VERSION_);
+        $this->confirmUninstall = $this->l('');
+
+        $this->ps_versions_compliancy = array('min' => '1.6', 'max' => _PS_VERSION_);
     }
 
     /**
@@ -60,17 +61,17 @@ class Moduleteste extends Module
      */
     public function install()
     {
-        Configuration::updateValue('MODULETESTE_LIVE_MODE', false);
+        Configuration::updateValue('ALAUNE_LIVE_MODE', false);
 
-        return parent::install() 
-            &&  $this->registerHook('header') 
-            &&  $this->registerHook('backOfficeHeader') 
-            &&  $this->registerHook('displayHome');
+        return parent::install() &&
+            $this->registerHook('header') &&
+            $this->registerHook('backOfficeHeader') &&
+            $this->registerHook('displayHome');
     }
 
     public function uninstall()
     {
-        Configuration::deleteByName('MODULETESTE_LIVE_MODE');
+        Configuration::deleteByName('ALAUNE_LIVE_MODE');
 
         return parent::uninstall();
     }
@@ -83,7 +84,7 @@ class Moduleteste extends Module
         /**
          * If values have been submitted in the form, process.
          */
-        if (((bool)Tools::isSubmit('submitModuletesteModule')) == true) {
+        if (((bool)Tools::isSubmit('submitAlauneModule')) == true) {
             $this->postProcess();
         }
 
@@ -108,7 +109,7 @@ class Moduleteste extends Module
         $helper->allow_employee_form_lang = Configuration::get('PS_BO_ALLOW_EMPLOYEE_FORM_LANG', 0);
 
         $helper->identifier = $this->identifier;
-        $helper->submit_action = 'submitModuletesteModule';
+        $helper->submit_action = 'submitAlauneModule';
         $helper->currentIndex = $this->context->link->getAdminLink('AdminModules', false)
             .'&configure='.$this->name.'&tab_module='.$this->tab.'&module_name='.$this->name;
         $helper->token = Tools::getAdminTokenLite('AdminModules');
@@ -137,7 +138,7 @@ class Moduleteste extends Module
                     array(
                         'type' => 'switch',
                         'label' => $this->l('Live mode'),
-                        'name' => 'MODULETESTE_LIVE_MODE',
+                        'name' => 'ALAUNE_LIVE_MODE',
                         'is_bool' => true,
                         'desc' => $this->l('Use this module in live mode'),
                         'values' => array(
@@ -158,12 +159,12 @@ class Moduleteste extends Module
                         'type' => 'text',
                         'prefix' => '<i class="icon icon-envelope"></i>',
                         'desc' => $this->l('Enter a valid email address'),
-                        'name' => 'MODULETESTE_ACCOUNT_EMAIL',
+                        'name' => 'ALAUNE_ACCOUNT_EMAIL',
                         'label' => $this->l('Email'),
                     ),
                     array(
                         'type' => 'password',
-                        'name' => 'MODULETESTE_ACCOUNT_PASSWORD',
+                        'name' => 'ALAUNE_ACCOUNT_PASSWORD',
                         'label' => $this->l('Password'),
                     ),
                 ),
@@ -180,9 +181,9 @@ class Moduleteste extends Module
     protected function getConfigFormValues()
     {
         return array(
-            'MODULETESTE_LIVE_MODE' => Configuration::get('MODULETESTE_LIVE_MODE', true),
-            'MODULETESTE_ACCOUNT_EMAIL' => Configuration::get('MODULETESTE_ACCOUNT_EMAIL', 'contact@prestashop.com'),
-            'MODULETESTE_ACCOUNT_PASSWORD' => Configuration::get('MODULETESTE_ACCOUNT_PASSWORD', null),
+            'ALAUNE_LIVE_MODE' => Configuration::get('ALAUNE_LIVE_MODE', true),
+            'ALAUNE_ACCOUNT_EMAIL' => Configuration::get('ALAUNE_ACCOUNT_EMAIL', 'contact@prestashop.com'),
+            'ALAUNE_ACCOUNT_PASSWORD' => Configuration::get('ALAUNE_ACCOUNT_PASSWORD', null),
         );
     }
 
