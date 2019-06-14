@@ -56,11 +56,15 @@
         {hook h="displayWrapperTop"}
 
         {block name='displayHomeFullWidth'}
-          <div class="container-solid">
-            {hook h='displayHomeFullWidth'}
-          </div>
+          {if $page.page_name == 'product'}
+            <div class="container-solid">
+                {hook h='displayHomeFullWidth'}
+            </div>
+          {/if}
+            
+		  	{/block}
 
-			{/block}
+
         <div class="container">
           {block name='breadcrumb'}
             {include file='_partials/breadcrumb.tpl'}
