@@ -56,11 +56,15 @@
         {hook h="displayWrapperTop"}
 
         {block name='displayHomeFullWidth'}
-          <div class="container-solid">
-            {hook h='displayHomeFullWidth'}
-          </div>
-        {/block}
-        
+          {if $page.page_name == 'index'}
+            <div class="container-solid">
+                {hook h='displayHomeFullWidth'}
+            </div>
+          {/if}
+            
+		  	{/block}
+
+
         <div class="container">
           {block name='breadcrumb'}
             {include file='_partials/breadcrumb.tpl'}
