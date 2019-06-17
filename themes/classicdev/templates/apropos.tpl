@@ -1,4 +1,4 @@
-{extends file='page.tpl'}
+{extends file='page-perso.tpl'}
 {block name='page_header_container'}
 {/block}
 
@@ -11,13 +11,13 @@
 				<div class="conteneurSlideshow">
 					<div class="conteneurSlide">
 						<div class="sliderAPropos" id="slider1">
-							<img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/diapo1.png">
+							<img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/diapo1.jpg">
 						</div>
 						<div class="sliderAPropos" id="slider2">
-							<img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/diapo1.png">
+							<img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/diapo2.jpg">
 						</div>
 						<div class="sliderAPropos" id="slider3">
-							<img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/diapo1.png">
+							<img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/diapo3.jpg">
 						</div>
 					</div>
 				</div>
