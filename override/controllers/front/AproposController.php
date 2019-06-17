@@ -20,6 +20,4 @@ class AproposController extends FrontController
         parent::initContent();
         $this->setTemplate('apropos.tpl'); 
     }
-    
-
 }

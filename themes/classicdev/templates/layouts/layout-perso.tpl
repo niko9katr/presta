@@ -35,7 +35,7 @@
 
         {block name='displayHomeFullWidth'}
           {if $page.page_name == 'index'}
-            <div class="container-solid">
+            <div class="container-fluid">
                 {hook h='displayHomeFullWidth'}
             </div>
           {/if}
@@ -43,7 +43,7 @@
 		  	{/block}
 
 
-        <div class="container-fluid">{*container overide*}
+        <div class="container-fluide">{*container overide*}
           {block name='breadcrumb'}
             {include file='_partials/breadcrumb.tpl'}
           {/block}

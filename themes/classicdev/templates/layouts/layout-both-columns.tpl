@@ -61,7 +61,6 @@
                 {hook h='displayHomeFullWidth'}
             </div>
           {/if}
-            
 		  	{/block}
 
 
