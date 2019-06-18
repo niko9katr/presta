@@ -313,3 +313,40 @@
     padding-left: 0px;
     padding-right: 0px;
   }
+
+  .rencontres{
+    h2{
+      text-align: center;
+
+    }
+  }
+  .parallax {
+  background-image: url("http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/parallax.jpg");
+  /* Set a specific height */
+  min-height: 200px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#rencontrept1{
+  overflow: hidden;
+}
+#content{
+  padding: 0%;
+}
+$space : 10%;
+.container-perso{
+  margin-left: $space;
+  margin-right: $space;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+#maps{
+  iframe{
+    max-width: 550px;
+  }
+}

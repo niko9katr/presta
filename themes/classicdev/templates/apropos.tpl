@@ -14,10 +14,10 @@
 							<img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/diapo1.jpg">
 						</div>
 						<div class="sliderAPropos" id="slider2">
-							<img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/diapo2.jpg">
+							<img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/diapo1.jpg">
 						</div>
 						<div class="sliderAPropos" id="slider3">
-							<img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/diapo3.jpg">
+							<img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/diapo1.jpg">
 						</div>
 					</div>
 				</div>
