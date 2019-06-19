@@ -2,27 +2,97 @@
 {block name='page_header_container'}
 {/block}
 {block name='page_content'}
-<div class="">
+<div>
 	<h1 style="text-align: center; margin-bottom: 5%;">Venez nous rencontrer</h1>	
 	<div id="rencontrept1">
-		<div class=" col-md-6">
-			<div id="calendar">
-				<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%234285F4&amp;ctz=Europe%2FParis&amp;src=dmFudGlhbzc3MkBnbWFpbC5jb20&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23039BE5&amp;color=%2333B679" style="border-width:0; margin: 0 auto; width:100%;" width="640" height="480" frameborder="0" scrolling="no"></iframe>
-			</div>
-		</div>
-		<div class="col-md-6 rencontres">
-			<h2>prochainement</h2>
-			<p>Qui enim amet eu magna velit ipsum ea aliquip commodo magna labore aliqua esse nisi.</p>
-		</div>
-	</div>
-	<br>
-	<div class="parallax"></div>
-	<br>
-	<div class="container-perso">
-		<div id="maps" class="container-fluid box">
+		<div id="maps" class="container-fluid box col-md-6">
 			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1I7cIuQnRLTUY83rhlsuah4frBfBA2Tdt" width="640" height="480"></iframe>
 		</div>
+		<div class="col-md-6 descriptionAPropos  rencontres">
+			<h2>prochainement</h2>
+			<p class="descriptionTexte">Qui enim amet eu magna velit ipsum ea aliquip commodo magna labore aliqua esse nisi.Qui enim amet eu magna velit ipsum ea aliquip commodo magna labore aliqua esse nisi.</p>
+		</div>
 	</div>
+	<br>
+	<br>
 
+	<div class="container">
+            <div class="row blog">
+                <div class="col-md-12">
+                    <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#blogCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://localhost/nouvelleliterie/prestashop/themes/classicdev/assets/img/sallon1.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a href="#">
+                                            <img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                    </div>
+                    <!--.Carousel-->
+
+                </div>
+            </div>
+</div>
+
+	
+<div class="parallax"></div>
 </div>
 {/block}

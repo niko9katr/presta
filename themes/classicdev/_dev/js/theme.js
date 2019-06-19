@@ -72,3 +72,8 @@ $(document).ready(() => {
   productMinitature.init();
   productSelect.init();
 });
+////////CAROUSEL///////////
+// optional
+$('#blogCarousel').carousel({
+  interval: 5000
+});
