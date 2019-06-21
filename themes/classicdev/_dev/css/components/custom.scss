@@ -214,7 +214,7 @@
     color: $white;
     text-align: justify;
   }
-  
+ 
   /*AGENDA*/
 
 
@@ -304,85 +304,20 @@
   66% {left:-1220px;}
   90% {left:-1220px;}
   }
-  .container-fluide{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0px;
-    padding-right: 0px;
+  #content{
+    padding: 0%;
   }
 
-  .rencontres{
-    h2{
-      text-align: center;
-    }
-  }
+
+  
   .parallax {
-  background-image: url("http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/parallax.jpg");
-  /* Set a specific height */
-  min-height: 200px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#rencontrept1{
-  overflow: hidden;
-}
-#content{
-  padding: 0%;
-}
-$space : 10%;
-.container-perso{
-  margin-left: $space;
-  margin-right: $space;
-  padding-left: 0px;
-  padding-right: 0px;
-
-}
-#maps{
-  iframe{
-    max-width: 550px;
+    background-image: url("http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/parallax.jpg");
+    /* Set a specific height */
+    min-height: 200px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
-}
-//rencontre.tpl
-.box
-{
-  padding-left: 9%;
-  padding-top: 35px;
-  position: relative;
-}
-.box iframe
-{
-top: 0;
-left: 0;
-width: 100%;
-//height: 100%;
-}
-.container-fluid .row, .products{
-  padding: 0px 5%;
-}
-
-///////////CAROUSEL ///////////////////pas responsive
-.blog .carousel-indicators {
-	
-	top: auto;
-    bottom: -40px;
-
-}
-
-/* The colour of the indicators */
-.blog .carousel-indicators li {
-    background: #a3a3a3;
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
-}
-
-.blog .carousel-indicators .active {
-background: #707070;
-}
-.card{
-  border-top: 0px;
-}

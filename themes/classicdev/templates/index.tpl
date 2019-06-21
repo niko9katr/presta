@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-{extends file='page.tpl'}
-=======
 {**
  * 2007-2019 PrestaShop and Contributors
  *
@@ -26,7 +23,6 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {extends file='page-perso.tpl'}
->>>>>>> 0b282a2e893c40bec18d17c16a26f45a822be63e
 
     {block name='page_content_container'}
       <section id="content" class="page-home">
