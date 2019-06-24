@@ -96,6 +96,5 @@
 </div>
 
 	
-<div class="parallax"></div>
 </div>
 {/block}
