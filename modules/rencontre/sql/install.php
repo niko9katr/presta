@@ -1,3 +1,4 @@
+<?php
 /**
 * 2007-2019 PrestaShop
 *
@@ -21,17 +22,22 @@
 *  @copyright 2007-2019 PrestaShop SA
 *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
-*
-* Don't forget to prefix your containers with your own identifier
-* to avoid any conflicts with others containers.
-*/  
-.parallax {
-    /* Set a specific height */
-    min-height: 200px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+*/
+$sql = array();
+
+$sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'rencontre` (
+    `id_rencontre` int(11) NOT NULL AUTO_INCREMENT,
+    `txt_rencontre` TEXT(50) NOT NULL,
+    `lieux_rencontre` varchar(50) NOT NULL,
+    `dates_rencontre` varchar(50) NOT NULL,
+    `maps_rencontre` varchar(50),
+    `img_rencontre` varchar(50),
+    PRIMARY KEY  (`id_rencontre`),
+
+) ENGINE=' . _MYSQL_ENGINE_ . ' DEFAULT CHARSET=utf8;';
+
+foreach ($sql as $query) {
+    if (Db::getInstance()->execute($query) == false) {
+        return false;
+    }
+}

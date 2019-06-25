@@ -24,14 +24,4 @@
 *
 * Don't forget to prefix your containers with your own identifier
 * to avoid any conflicts with others containers.
-*/  
-.parallax {
-    /* Set a specific height */
-    min-height: 200px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+*/

@@ -18,6 +18,9 @@ class RencontresController extends FrontController
     public function initContent()
     {
         parent::initContent();
+        $this->context->smarty->assign(array(
+            'nb_product' => Db::getInstance()->getValue("SELECT COUNT(*) FROM ._DB_PREFIX_.'product")
+        ));
         $this->setTemplate('rencontres.tpl'); 
     }
     

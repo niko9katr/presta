@@ -1,3 +1,4 @@
+<?php
 /**
 * 2007-2019 PrestaShop
 *
@@ -21,17 +22,22 @@
 *  @copyright 2007-2019 PrestaShop SA
 *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
-*
-* Don't forget to prefix your containers with your own identifier
-* to avoid any conflicts with others containers.
-*/  
-.parallax {
-    /* Set a specific height */
-    min-height: 200px;
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+*/
+if (!defined('_PS_VERSION_')) {
+    exit;
+}
+
+/**
+ * This function updates your module from previous versions to the version 1.1,
+ * usefull when you modify your database, or register a new hook ...
+ * Don't forget to create one file per version.
+ */
+function upgrade_module_1_1_0($module)
+{
+    /*
+     * Do everything you want right there,
+     * You could add a column in one of your module's tables
+     */
+
+    return true;
+}

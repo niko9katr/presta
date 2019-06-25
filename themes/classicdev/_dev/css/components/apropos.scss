@@ -1,0 +1,218 @@
+#AProposPage{
+    padding: 3%;
+  }
+  #AproposTitre{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+    color: $brand-primary;
+    margin-bottom: 4%;
+  }
+  .descriptionAPropos{
+    padding: 2%;
+    background-color: $brand-primary;
+    border-radius: 15px;
+  }
+  .descriptionTexte{
+  
+    color: $white;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 20px ;
+  }
+  #bloc1{
+    color: $white;
+  }
+  
+  #bloc2{
+    color: $white;
+  }
+  
+  #bloc3{
+    color: $white;
+  }
+ 
+
+
+/*SLIDER*/
+.blockInfoAPropos {
+  float: left;
+  display: block;
+}
+@media (max-width: 992px) {
+  .blockInfoAPropos {
+    float: none;
+    margin-bottom: 7%;
+  }
+  .conteneurSlideshow {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 640px)  {
+    .sliderAPropos img {
+        width: 350px;
+        height: 250px;
+        max-width: 300px;
+        max-height: 250px;
+        
+    }
+    .conteneurSlideshow {
+      width: 300px;
+      height: 250px;
+      max-width: 300px;
+      max-height: 250px;
+      overflow: hidden;
+      position: relative;
+      background-color: $white;
+      margin: 0 auto;
+    }
+    
+    .sliderAPropos {
+      position: absolute;
+      width: 300px;
+      height: 211px;
+    }
+      
+}
+@media screen and (min-width: 640px) and (max-width: 5000px){
+    .sliderAPropos img {
+    width: 350px;
+    height: 300px;
+    max-width: 350px;
+    max-height: 300px;
+    object-fit: cover;
+    box-shadow: 0px 8px 60px 1px #afafaf;
+    }
+
+    .conteneurSlideshow {
+    width: 350px;
+    height: 300px;
+    max-width: 350px;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    background-color: $white;
+    margin: 0 auto;
+    }
+
+    .sliderAPropos {
+    position: absolute;
+    width: 300px;
+    height: 211px;
+    }
+}
+#slider1 {
+  left: 0;
+}
+
+#slider2 {
+  left: 610px;
+}
+
+#slider3 {
+  left: 1220px;
+}
+
+.conteneurSlide {
+  width: 1220px;
+  height: 211px;
+  left: 0px;
+  position: absolute;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-name: animeSlide;
+  -moz-animation-duration: 10s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-name: animeSlide;
+  -ms-animation-duration: 10s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-name: animeSlide;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-name: animeSlide;
+}
+
+@-webkit-keyframes animeSlide {
+  0% {
+      left: 0px;
+  }
+  22% {
+      left: 0px;
+  }
+  33% {
+      left: -610px;
+  }
+  45% {
+      left: -610px;
+  }
+  66% {
+      left: -1220px;
+  }
+  90% {
+      left: -1220px;
+  }
+}
+
+@-moz-keyframes animeSlide {
+  0% {
+      left: 0px;
+  }
+  22% {
+      left: 0px;
+  }
+  33% {
+      left: -610px;
+  }
+  45% {
+      left: -610px;
+  }
+  66% {
+      left: -1220px;
+  }
+  90% {
+      left: -1220px;
+  }
+}
+
+@-ms-keyframes animeSlide {
+  0% {
+      left: 0px;
+  }
+  22% {
+      left: 0px;
+  }
+  33% {
+      left: -610px;
+  }
+  45% {
+      left: -610px;
+  }
+  66% {
+      left: -1220px;
+  }
+  90% {
+      left: -1220px;
+  }
+}
+
+@keyframes animeSlide {
+  0% {
+      left: 0px;
+  }
+  22% {
+      left: 0px;
+  }
+  33% {
+      left: -610px;
+  }
+  45% {
+      left: -610px;
+  }
+  66% {
+      left: -1220px;
+  }
+  90% {
+      left: -1220px;
+  }
+}
