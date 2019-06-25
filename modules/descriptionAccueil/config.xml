@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>descriptionAccueil</name>
+	<displayName><![CDATA[descriptionAccueil]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[Description de l\'accueil]]></description>
+	<author><![CDATA[Victor]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>
