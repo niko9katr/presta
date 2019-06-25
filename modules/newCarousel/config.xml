@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>newCarousel</name>
+	<displayName><![CDATA[newCarousel]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[Nouveau carousel avec bouton]]></description>
+	<author><![CDATA[Victor]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>
