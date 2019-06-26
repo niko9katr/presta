@@ -8,7 +8,7 @@
 		{block name=contenuPrincipale}
 			{block name=matelas}
 			<div id="bloc1" class="container-fluid">
-				<div class="descriptionAPropos col-lg-6 col-md-12 col-sm-12">
+				<div id="description1" class="descriptionAPropos col-lg-6 col-md-12 col-sm-12">
 					<h3 style="text-transform: uppercase;font-size: 2.7em;" class="descriptionTexteT">les matelas de <strong>laine</strong></h3>
 					<p class="descriptionTexteP">Un être humain dort quasiment un tiers de son existence.
 					Le matelas de laine est le seul matelas sans matière synthétique</strong>.<br><br>
@@ -32,9 +32,15 @@
 			{/block}
 			{block name=matelas}
 			<div id="bloc2" class="container-fluid">
-				<div class="descriptionAPropos col-lg-6 col-md-12 col-sm-12">
-					<h3 style="text-transform: uppercase;font-size: 2.7em;" class="descriptionTexteT">les matelas de <strong>laine</strong></h3>
-					<p class="descriptionTexteP">Un être humain dort quasiment un tiers de son existence.
+				
+				<div class="blockInfoAPropos col-lg-6 col-md-12 col-sm-12">
+					<div class="conteneurSlideshow">
+						<img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/lit1.jpg">
+					</div>
+				</div>
+				<div id="description2" class="descriptionAPropos col-lg-6 col-md-12 col-sm-12">
+					<h3 id="descriptionTitleLeft" style="text-transform: uppercase;font-size: 2.7em;" class="descriptionTexteT">les matelas de <strong>laine</strong></h3>
+					<p id="descriptionParaLeft" class="descriptionTexteP">Un être humain dort quasiment un tiers de son existence.
 					Le matelas de laine est le seul matelas sans matière synthétique</strong>.<br><br>
 					On peut considérer <strong>le matelas de laine </strong>comme <strong>écologique</strong>, une fois la laine recueillit elle ne nécessite aucun traitement chimique. <br>
 					D' un point de vue économique un matelas de laine est un bon investissement car il peut durer toute une vie. <br> <br>
@@ -42,12 +48,6 @@
 					La laine est un isolant thermorégulateur, c'est-à-dire qu'elle régule la chaleur corporelle. <br>					
 					</p>
 				</div>
-				<div class="blockInfoAPropos col-lg-6 col-md-12 col-sm-12">
-					<div class="conteneurSlideshow">
-						<img src="http://localhost/nouvelleLiterie/PrestaShop/themes/classicdev/assets/img/lit1.jpg">
-					</div>
-				</div>
-				
 			</div>
 			<br><br><br>
 			{/block}

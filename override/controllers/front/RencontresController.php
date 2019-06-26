@@ -27,14 +27,14 @@ class RencontresController extends FrontController
             $lieux = $row['lieux_meet'];
             $dates = $row['dates'];
             $photot = $row['photot'];
-            $iframe = $row['maps'];
+            $iframe = $row['iframe'];
         }
         $this->context->smarty->assign('id',$id);
         $this->context->smarty->assign('txt',$txt);
         $this->context->smarty->assign('lieux',$lieux);
         $this->context->smarty->assign('dates',$dates);
         $this->context->smarty->assign('photot',$photot);
-        $this->context->smarty->assign('maps',$maps);
+        $this->context->smarty->assign('iframe',$iframe);
 
     }
 }

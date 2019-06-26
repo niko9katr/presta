@@ -16,6 +16,6 @@
 	<br>
 	<br>
     <div id="maps" >
-		<iframe src="{$maps}" width="640" height="480"></iframe>
+		<iframe src="" width="640" height="480"></iframe>
 	</div>
 </div>
