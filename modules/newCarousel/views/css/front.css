@@ -215,10 +215,11 @@
 
 @media only screen and (max-width: 767px) {
 	.hero-item h2 {
-		font-size: 70px;
+		font-size: 40px;
 	}
 	.hero-item p {
 		font-size: 18px;
+		margin: 0 5%;
 	}
 	.hero-slider .owl-nav .owl-next {
 		top: auto;
@@ -231,13 +232,20 @@
 		left: 0;
 		padding-left: 15px;
 	}
+	.owl-dots{
+		visibility: hidden;
+	}
+	.site-btn{
+		font-size: 9px;
+		padding: 2%;
+	}
 }
 
 /* Small Mobile :320px. */
 
 @media only screen and (max-width: 479px) {
 	.hero-item h2 {
-		font-size: 55px;
+		font-size: 40px;
 		margin-bottom: 20px;
 	}
 	.hero-item p {
