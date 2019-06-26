@@ -5,12 +5,12 @@
 }
 #titleDescription{
     color:#1476d1;
-    font-size: 2.3em;
+    font-size: 3vw;
     margin-bottom: 10%;
 }
 #containerDescription p{
     color:#232323;
-    font-size: 1.2em;
+    font-size: 1.5vw;
     line-height: 1.3em;
     margin-bottom: 10%;
 }
@@ -18,11 +18,12 @@
 #decouvrirButton {
     color: #363A42 !important;
     background: #ffffff;
-    padding: 15px;
+    padding: 2%;
     text-transform: uppercase;
     border: 2px solid #363A42 !important;
     display: inline-block;
     font-weight: bold;
+    font-size: 1.3vw;
 }
 #decouvrirButton:hover {
     color: #ffffff !important;
@@ -48,13 +49,14 @@
     color:#1476d1;
     text-align: center;
     padding-top: 7%;
-    font-size: 1.6em;
+    font-size: 2vw;
     margin-bottom: 2.5%;
 }
 #paragrapheDescriptionFloatLeft{
     text-align: center;
     color:#232323;
-    font-size: 1.05em;
+    font-size: 1.3vw;
+    line-height: 1.2em;
     margin-left: 45%;
     margin-right: 5%;
 
@@ -62,7 +64,25 @@
 .paragrapheDescriptionFloatRight{
     text-align: center;
     color:#232323;
-    font-size: 1.05em;
+    font-size: 1.3vw;
+    line-height: 1.2em;
     margin-left: 5%;
     margin-right: 45%;
 }
+@media only screen and (max-width: 600px) {
+    .imgRightDescription, .imgLeftDescription{
+        display: block;
+        max-width: 100%;
+        margin-bottom: 3%;
+    }
+    .titleDescriptionFloat, .paragrapheDescriptionFloatRight, #paragrapheDescriptionFloatLeft{
+        display: block;
+        text-align: center;
+    }
+    #containerDescription{
+        margin-bottom: 9%;
+    }
+    .paragrapheDescriptionFloatRight, #paragrapheDescriptionFloatLeft{
+        margin: 0 20% 5% 20%;
+    }
+} 

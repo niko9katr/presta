@@ -11,11 +11,10 @@
   .descriptionAPropos{
     padding: 2%;
     border-radius: 15px; 
-    padding-right: 11%;
-    padding: auto 0;
+    
   }
   .descriptionTexteT{
-    text-align: justify;
+  
     color: #232323;
     font-weight: bolder;
   }
@@ -37,9 +36,13 @@
   #bloc3{
     color: $white;
   }
- 
-
-
+ #description1{
+    padding-right: 11%;
+ }
+ #description2{
+    padding-left: 11%;
+    direction:rtl;
+ }
 /*SLIDER*/
 .conteneurSlideshow img{
     width: 100%;
@@ -52,9 +55,10 @@
 }
 #bloc2{
   margin-top: 25%;
-  float: right;
+  float: left;
   display: flex;
   align-items: center;
+ 
 }
 
 
