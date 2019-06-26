@@ -31,7 +31,7 @@ if (!defined('_PS_VERSION_')) {
 class Rencontre extends Module
 {
     protected $config_form = false;
-
+    
     public function __construct()
     {
         $this->name = 'rencontre';
@@ -63,7 +63,7 @@ class Rencontre extends Module
     {
         Configuration::updateValue('RENCONTRE_LIVE_MODE', false);
 
-        include(dirname(__FILE__).'/sql/install.php');
+        //include(dirname(__FILE__).'/sql/install.php');
 
         return parent::install() &&
             $this->registerHook('header') &&

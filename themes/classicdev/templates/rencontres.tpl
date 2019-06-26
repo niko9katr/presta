@@ -7,10 +7,6 @@
     {hook h="Displaymeet"}
 </div>
 
-
-
-	
-
 </div>
 
 {/block}

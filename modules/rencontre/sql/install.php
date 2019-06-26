@@ -1,38 +1,18 @@
 <?php
 /**
 * 2007-2019 PrestaShop
-*
-* NOTICE OF LICENSE
-*
-* This source file is subject to the Academic Free License (AFL 3.0)
-* that is bundled with this package in the file LICENSE.txt.
-* It is also available through the world-wide-web at this URL:
-* http://opensource.org/licenses/afl-3.0.php
-* If you did not receive a copy of the license and are unable to
-* obtain it through the world-wide-web, please send an email
-* to license@prestashop.com so we can send you a copy immediately.
-*
-* DISCLAIMER
-*
-* Do not edit or add to this file if you wish to upgrade PrestaShop to newer
-* versions in the future. If you wish to customize PrestaShop for your
-* needs please refer to http://www.prestashop.com for more information.
-*
-*  @author    PrestaShop SA <contact@prestashop.com>
-*  @copyright 2007-2019 PrestaShop SA
-*  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
-*  International Registered Trademark & Property of PrestaShop SA
+* creer une table 
 */
 $sql = array();
 
-$sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'rencontre` (
-    `id_rencontre` int(11) NOT NULL AUTO_INCREMENT,
-    `txt_rencontre` TEXT(50) NOT NULL,
-    `lieux_rencontre` varchar(50) NOT NULL,
-    `dates_rencontre` varchar(50) NOT NULL,
-    `maps_rencontre` varchar(50),
-    `img_rencontre` varchar(50),
-    PRIMARY KEY  (`id_rencontre`),
+$sql[] = 'CREATE TABLE IF NOT EXISTS `' . _DB_PREFIX_ . 'meet` (
+    `id_meet` int(11) NOT NULL AUTO_INCREMENT,
+    `txt_meet` TEXT(50) NOT NULL,
+    `lieux_meet` varchar(50) NOT NULL,
+    `dates_meet` varchar(50) NOT NULL,
+    `maps_meet` varchar(50),
+    `img_meet` varchar(50),
+    PRIMARY KEY  (`id_meet`),
 
 ) ENGINE=' . _MYSQL_ENGINE_ . ' DEFAULT CHARSET=utf8;';
 
