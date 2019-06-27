@@ -30,7 +30,7 @@
  * but does not want to loose all of the data associated to the module.
  */
 $sql = array();
-
+//$sql[] = "DROP TABLE IF EXISTS 'ps_meet' ";
 foreach ($sql as $query) {
     if (Db::getInstance()->execute($query) == false) {
         return false;

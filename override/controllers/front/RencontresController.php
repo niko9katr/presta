@@ -28,6 +28,10 @@ class RencontresController extends FrontController
             $dates = $row['dates'];
             $photot = $row['photot'];
             $iframe = $row['iframe'];
+            $horaires = $row['horaires'];
+            $horaires2 = $row['horaires2'];
+            $horaires3 = $row['horaires3'];
+            
         }
         $this->context->smarty->assign('id',$id);
         $this->context->smarty->assign('txt',$txt);
@@ -35,6 +39,8 @@ class RencontresController extends FrontController
         $this->context->smarty->assign('dates',$dates);
         $this->context->smarty->assign('photot',$photot);
         $this->context->smarty->assign('iframe',$iframe);
-
+        $this->context->smarty->assign('horaires',$horaires);
+        $this->context->smarty->assign('horaires2',$horaires2);
+        $this->context->smarty->assign('horaires3',$horaires3);
     }
 }
