@@ -20,27 +20,17 @@ class RencontresController extends FrontController
         parent::initContent();
         $this->setTemplate('rencontres.tpl'); 
         
+        
         $sql = "SELECT * FROM `ps_meet` WHERE id_meet = 1";
         if ($row = Db::getInstance()->getRow($sql)){
-            $id = $row['id_meet'];
-            $txt = $row['txt_meet'];
-            $lieux = $row['lieux_meet'];
-            $dates = $row['dates'];
-            $photot = $row['photot'];
-            $iframe = $row['iframe'];
-            $horaires = $row['horaires'];
-            $horaires2 = $row['horaires2'];
-            $horaires3 = $row['horaires3'];
-            
+
+            $this->context->smarty->assign('row',$row);         
         }
-        $this->context->smarty->assign('id',$id);
-        $this->context->smarty->assign('txt',$txt);
-        $this->context->smarty->assign('lieux',$lieux);
-        $this->context->smarty->assign('dates',$dates);
-        $this->context->smarty->assign('photot',$photot);
-        $this->context->smarty->assign('iframe',$iframe);
-        $this->context->smarty->assign('horaires',$horaires);
-        $this->context->smarty->assign('horaires2',$horaires2);
-        $this->context->smarty->assign('horaires3',$horaires3);
+
+        $sql2 = "SELECT * FROM `ps_meet` WHERE id_meet = 2";
+        if ($row2 = Db::getInstance()->getRow($sql2)){
+
+            $this->context->smarty->assign('row2',$row2);         
+        }
     }
 }
